@@ -1,0 +1,23 @@
+ public class kuldeep{
+    public static void main(String[]args){
+        int arr[]={15,25,35};
+        int arr1[]={10,20,30};
+        int sum1=0;
+         int sum2=0;
+         int result;
+        for(int i=0;i<arr.length;i++){
+            sum1=sum1+arr[i];
+        }
+             System.out.println(sum1);
+        
+            for(int j=0;j<arr1.length;j++){
+                sum2=sum2+arr1[j];
+            }
+            System.out.println(sum2);
+            
+        result=sum1+sum2;
+        System.out.println(result);
+       
+        
+    }
+}
