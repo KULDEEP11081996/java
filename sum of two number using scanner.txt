@@ -1,0 +1,22 @@
+import java.util.*;
+/**
+ * employee
+ */
+public class employee {
+    public static void main(String[] args) {
+        int c;
+        System.out.println("enter the value of a and b:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+       int b=sc.nextInt();
+        c=a+b;
+        System.out.println("sum of two number:\n"+c);
+
+    }
+}
+
+output
+enter the value of a and b:
+45 78
+sum of two number:
+123
