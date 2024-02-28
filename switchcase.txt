@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class SwitchStringExample {  
+    public static void main(String[] args) {  
+        int level;
+        Scanner p = new Scanner(System.in);
+        System.out.print("Enter your level 1/2/3: ");
+        level = p.nextInt();
+        
+        String levelString;
+        switch(level){  
+            case 1: 
+                levelString = "Beginner";
+                break;  
+            case 2: 
+                levelString = "Intermediate";
+                break;  
+            case 3: 
+                levelString = "Expert";
+                break;  
+            default: 
+                levelString = "Unknown";
+                break;
+        }  
+        System.out.println("Your Level is: " + levelString);
+        p.close();
+    }  
+} 
