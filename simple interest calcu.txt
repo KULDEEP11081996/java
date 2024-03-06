@@ -1,0 +1,19 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class simpleinterste {
+    public static void main(String[] args) {
+        float p,r,t,si;
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Enter the principal:");
+        p=sc.nextFloat();
+        System.out.println("Enter the Interest:");
+        r=sc.nextFloat();
+        System.out.println("Enter time:");
+        t=sc.nextFloat();
+        si=(p*r*t)/100;
+        System.out.println("Simple interest is:" + si);
+        
+    }
+}
