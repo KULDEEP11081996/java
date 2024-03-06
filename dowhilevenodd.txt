@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class DoWhile {
+    public static void main(String[] args) {
+        int num;
+        System.out.println("Enter the number:");
+        Scanner s = new Scanner(System.in);
+        num = s.nextInt();
+        
+        do {
+            if (num % 2 == 0) {
+                System.out.println(num + " is an even number");
+            } else {
+                System.out.println(num + " is an odd number");
+            }
+            ++num;
+        } while (num <= 50);
+    }
+}

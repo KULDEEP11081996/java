@@ -1,0 +1,58 @@
+import java.util.*;
+
+public class Operator {
+    public static void main(String[] args) {
+        int a, b, c, ch;
+        System.out.println("Enter any two numbers:");
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        b = sc.nextInt();
+        System.out.println("Enter your choice (1: Addition, 2: Subtraction, 3: Multiplication, 4: Division, 5: Square):");
+        ch = sc.nextInt();
+        for(ch=1;ch<=5;ch++){
+        
+        switch (ch) {
+            case 1:
+                c = a + b;
+                System.out.println("Addition: " + c);
+                break;
+            case 2:
+                c = a - b;
+                System.out.println("Subtraction: " + c);
+                break;
+            case 3:
+                c = a * b;
+                System.out.println("Multiplication: " + c);
+                break;
+            case 4:
+                if (b != 0) {
+                    c = a / b;
+                    System.out.println("Division: " + c);
+                } else {
+                    System.out.println("Division by zero is not allowed");
+                }
+                break;
+            case 5:
+                c = a * a;
+                System.out.println("Square of " + a + ": " + c);
+                break;
+            default:
+                System.out.println("Unknown operation");
+        }
+        }
+    }
+}
+
+
+output
+java -cp /tmp/GaW4vvjsfS Operator
+Enter any two numbers:
+20 10
+Enter your choice (1: Addition, 2: Subtraction, 3: Multiplication, 4: Division, 5: Square):
+1
+Addition: 30
+Subtraction: 10
+Multiplication: 200
+Division: 2
+Square of 20: 400
+
